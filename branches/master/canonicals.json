@@ -1,9 +1,9 @@
 [
   {
-    "id": "xxexample.fhir.uv.myig",
+    "id": "ohie.fhir.food-allergy-national",
     "type": "ImplementationGuide",
-    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-    "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
+    "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national",
+    "version": "1.0.0",
+    "name": "FoodAllergyNationalIG"
   }
 ]
