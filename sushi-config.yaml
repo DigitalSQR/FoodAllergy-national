@@ -7,11 +7,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
+id: ohie.fhir.food-allergy-national
+canonical: http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national
+url: http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national
+name: FoodAllergyNationalIG
+title: "Food Allergies National ImplementationGuide"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
@@ -38,15 +38,15 @@ releaseLabel: STU1
 # will be translated into IG.contact values.
 publisher:
   name: My Organization 
-  url: http://example.com/committees
+  url: http://myorg.org/standards/wg
   email: my-group@example.com
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Someone
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: someone@example.com
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -59,8 +59,6 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
-#dependencies:
-#  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
 #    uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -128,10 +126,11 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-#pages:
-#  index.md:
-#    title: Example Home
-#  implementation.xml:
+pages:
+  index.xml:
+    title: Home Page
+  changes.xml:
+    title: IG Change history
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
