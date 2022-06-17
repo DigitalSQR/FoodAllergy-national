@@ -1,12 +1,20 @@
 ﻿FoodAllergyNationalIG : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0
+err = 1, warn = 2, info = 0
 IG Publisher Version: 1.1.121
-Generated Fri Jun 17 08:48:53 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy-national#1.0.0 (canonical = http://ohie.org/fhir/food-allergy)
+Generated Fri Jun 17 08:54:43 UTC 2022. FHIR version 4.0.1 for ohie.fhir.food-allergy-national#1.0.0 (canonical = http://ohie.org/fhir/food-allergy)
  Build Errors : 0 / 0 / 0
- /github/workspace/fsh-generated/resources/ImplementationGuide-ohie.fhir.food-allergy-national : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ohie.fhir.food-allergy-national : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModelZZ : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyZZ : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-FoodAllergyZZVS : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/ImplementationGuide-ohie.fhir.food-allergy-national.json ==
-ERROR: ImplementationGuide/ohie.fhir.food-allergy-national: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+== fsh-generated/resources/StructureDefinition-FoodAllergyModelZZ.json ==
+ERROR: StructureDefinition/FoodAllergyModelZZ: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/FoodAllergyModelZZ: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== fsh-generated/resources/StructureDefinition-FoodAllergyZZ.json ==
+WARNING: StructureDefinition.where(url = 'http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/StructureDefinition/FoodAllergyZZ'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-FoodAllergyZZVS.json ==

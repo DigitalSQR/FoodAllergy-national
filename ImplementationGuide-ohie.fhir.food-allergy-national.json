@@ -60,6 +60,12 @@
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
       "version": "3.1.0"
+    },
+    {
+      "id": "ohie_fhir_food_allergy",
+      "uri": "http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy",
+      "packageId": "ohie.fhir.food-allergy",
+      "version": "dev"
     }
   ],
   "definition": {
@@ -86,19 +92,6 @@
           {
             "url": "value",
             "valueString": "STU1"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -362,6 +355,50 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergyZZ"
+        },
+        "name": "National Food Allergy profile",
+        "description": "National Food Allergy profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergyModelZZ"
+        },
+        "name": "Food Allergy Logical Model",
+        "description": "Food Allergy information model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/FoodAllergyZZVS"
+        },
+        "name": "Food Allergies",
+        "description": "Main Food allergies.",
+        "exampleBoolean": false
       }
     ],
     "page": {
