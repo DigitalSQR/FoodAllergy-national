@@ -1,8 +1,120 @@
 {
   "resourceType" : "Bundle",
-  "id" : "c7d60794-39e4-4641-a661-0b2b36294cb3",
+  "id" : "14543bdd-9cb8-45d2-9eee-413cf98035bc",
   "meta" : {
-    "lastUpdated" : "2022-06-17T08:48:42.503+00:00"
+    "lastUpdated" : "2022-06-17T08:54:28.224+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/ValueSet/FoodAllergyZZVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "FoodAllergyZZVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 10 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Mar 2022</p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-91934008\"> </a>  <a href=\"http://snomed.info/id/91934008\">91934008</a></td><td>Allergy to nut</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782555009\"> </a>  <a href=\"http://snomed.info/id/782555009\">782555009</a></td><td>Allergy to cow's milk protein</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-213020009\"> </a>  <a href=\"http://snomed.info/id/213020009\">213020009</a></td><td>Allergy to egg protein</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-417532002\"> </a>  <a href=\"http://snomed.info/id/417532002\">417532002</a></td><td>Allergy to fish</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-300913006\"> </a>  <a href=\"http://snomed.info/id/300913006\">300913006</a></td><td>Allergy to shellfish</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782594005\"> </a>  <a href=\"http://snomed.info/id/782594005\">782594005</a></td><td>Allergy to soy protein</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-21191000122102\"> </a>  <a href=\"http://snomed.info/id/21191000122102\">21191000122102</a></td><td>Allergy to mustard</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-712843002\"> </a>  <a href=\"http://snomed.info/id/712843002\">712843002</a></td><td>Allergy to celery</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782575000\"> </a>  <a href=\"http://snomed.info/id/782575000\">782575000</a></td><td>Allergy to lupine seed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-420174000\"> </a>  <a href=\"http://snomed.info/id/420174000\">420174000</a></td><td>Allergy to wheat</td></tr></table></div>"
+      },
+      "url" : "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/ValueSet/FoodAllergyZZVS",
+      "version" : "1.0.0",
+      "name" : "FoodAllergyZZVS",
+      "title" : "Food Allergies",
+      "status" : "active",
+      "date" : "2022-06-17T08:54:28+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://myorg.org/standards/wg"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Someone",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "someone@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Main Food allergies.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bb0e8e6d-646f-48ff-8e01-7a34282475f5",
+        "timestamp" : "2022-06-17T08:54:37+00:00",
+        "total" : 10,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91934008",
+          "display" : "Allergy to nut"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782555009",
+          "display" : "Allergy to cow's milk protein"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "213020009",
+          "display" : "Allergy to egg protein"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417532002",
+          "display" : "Allergy to fish"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "300913006",
+          "display" : "Allergy to shellfish"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782594005",
+          "display" : "Allergy to soy protein"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "21191000122102",
+          "display" : "Allergy to mustard"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "712843002",
+          "display" : "Allergy to celery"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782575000",
+          "display" : "Allergy to lupine seed"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420174000",
+          "display" : "Allergy to wheat"
+        }]
+      }
+    }
+  }]
 }

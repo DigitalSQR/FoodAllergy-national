@@ -5,5 +5,26 @@
     "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national",
     "version": "1.0.0",
     "name": "FoodAllergyNationalIG"
+  },
+  {
+    "id": "FoodAllergyModelZZ",
+    "type": "StructureDefinition",
+    "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/StructureDefinition/FoodAllergyModelZZ",
+    "version": "1.0.0",
+    "name": "FoodAllergyModelZZ"
+  },
+  {
+    "id": "FoodAllergyZZ",
+    "type": "StructureDefinition",
+    "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/StructureDefinition/FoodAllergyZZ",
+    "version": "1.0.0",
+    "name": "FoodAllergyZZ"
+  },
+  {
+    "id": "FoodAllergyZZVS",
+    "type": "ValueSet",
+    "url": "http://ohie.org/fhir/food-allergy/ImplementationGuide/ohie.fhir.food-allergy-national/ValueSet/FoodAllergyZZVS",
+    "version": "1.0.0",
+    "name": "FoodAllergyZZVS"
   }
 ]

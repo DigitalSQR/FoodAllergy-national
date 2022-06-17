@@ -48,6 +48,11 @@
     <packageId value="hl7.terminology.r4"/>
     <version value="3.1.0"/>
   </dependsOn>
+  <dependsOn id="ohie_fhir_food_allergy">
+    <uri value="http://ohie.org/fhir/food-allergy/ImplementationGuide/food-allergy"/>
+    <packageId value="ohie.fhir.food-allergy"/>
+    <version value="dev"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -63,14 +68,6 @@
       </extension>
       <extension url="value">
         <valueString value="STU1"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="autoload-resources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -233,6 +230,39 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergyZZ"/>
+      </reference>
+      <name value="National Food Allergy profile"/>
+      <description value="National Food Allergy profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergyModelZZ"/>
+      </reference>
+      <name value="Food Allergy Logical Model"/>
+      <description value="Food Allergy information model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FoodAllergyZZVS"/>
+      </reference>
+      <name value="Food Allergies"/>
+      <description value="Main Food allergies."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
